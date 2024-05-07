@@ -25,7 +25,7 @@ public class EmailSteps {
 		
 		lp = home.click_AccountButton();
 	}
-
+	
 	@When("User enters valid email {string}")
 	public void user_enters_valid_email_address(String valid_email) {
 		lp.setEmailText(valid_email);

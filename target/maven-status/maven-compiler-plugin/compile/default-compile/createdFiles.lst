@@ -1,0 +1,4 @@
+pages\homePage.class
+pages\searchedProductPage.class
+base\Base.class
+pages\loginPage.class

@@ -1,0 +1,3 @@
+StepDefinitions\SearchSteps.class
+StepDefinitions\EmailSteps.class
+StepDefinitions\BaseHook.class

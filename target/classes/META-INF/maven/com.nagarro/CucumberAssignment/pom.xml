@@ -20,8 +20,20 @@
 					<target>8</target>
 				</configuration>
 			</plugin>
+
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.2.5</version>
+				<configuration>
+					<includes>
+						<include>**/TestRunner.java</include> <!-- Include
+						TestRunner.java -->
+					</includes>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
+
 	<properties>
 		<maven.compiler.source>8</maven.compiler.source>
 		<maven.compiler.target>8</maven.compiler.target>
@@ -35,6 +47,12 @@
 			<artifactId>testng</artifactId>
 			<version>7.10.2</version>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.2</version>
 		</dependency>
 
 
