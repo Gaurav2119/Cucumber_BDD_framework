@@ -1,10 +1,9 @@
 package StepDefinitions;
 
-import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -49,6 +48,7 @@ public class EmailSteps {
 	
 	@Then("User stays on the same page with an error message")
 	public void user_stays_on_the_same_page_with_an_error_message() {
-		assertEquals(lp.errorWithEmail(), loginPage.error_message, "No error is thrown");
+		Assert.fail("This Case is failed");
+		//assertEquals(lp.errorWithEmail(), loginPage.error_message, "No error is thrown");
 	}
 }
